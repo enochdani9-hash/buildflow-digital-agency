@@ -80,11 +80,12 @@
     <div class="absolute top-[-10%] left-[-10%] w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-[100px] pointer-events-none orb-animate"></div>
     <div class="absolute top-[40%] right-[-10%] w-[300px] h-[300px] bg-purple-600/20 rounded-full blur-[100px] pointer-events-none orb-animate" style="animation-delay: 2s;"></div>
 
-    <!-- Navigation (Scaled Down) -->
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-card border-b-0 border-t-0 border-l-0 border-r-0 border-white/5 transition-all duration-300">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center max-w-6xl">
             <div class="text-xl font-extrabold tracking-tight text-white">BuildFlow<span class="text-accent">.</span></div>
             <div class="hidden md:flex gap-6 items-center text-sm">
+                <a href="#work" class="text-slate-400 hover:text-white transition font-medium">Work</a>
                 <a href="#process" class="text-slate-400 hover:text-white transition font-medium">Process</a>
                 <a href="#about" class="text-slate-400 hover:text-white transition font-medium">About</a>
                 <a href="#contact" class="bg-white/10 hover:bg-white/20 text-white px-5 py-1.5 rounded-full font-semibold transition border border-white/10">Free Audit</a>
@@ -92,7 +93,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section (Scaled Down Typography) -->
+    <!-- Hero Section -->
     <header class="relative pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-grid">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-dark pointer-events-none"></div>
         <div class="container mx-auto px-6 text-center relative z-10 max-w-4xl">
@@ -110,14 +111,14 @@
                 <a href="#contact" class="bg-accent hover:bg-blue-600 text-white px-6 py-3 rounded-full font-bold text-sm md:text-base transition shadow-[0_0_30px_rgba(59,130,246,0.3)] hover:shadow-[0_0_50px_rgba(59,130,246,0.5)]">
                     Claim Your Free Tech Audit
                 </a>
-                <a href="#services" class="glass-card hover:bg-white/10 text-white px-6 py-3 rounded-full font-bold text-sm md:text-base transition">
-                    View Our Services
+                <a href="#work" class="glass-card hover:bg-white/10 text-white px-6 py-3 rounded-full font-bold text-sm md:text-base transition">
+                    View Our Work
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Services Section (Tighter Padding) -->
+    <!-- Services Section -->
     <section id="services" class="py-16 relative z-10">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="text-center mb-16">
@@ -145,6 +146,90 @@
                     <div class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center mb-5"><svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></div>
                     <h3 class="text-xl font-bold text-white mb-3">Automation Pipeline</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">We integrate your platforms directly into your daily workflow, instantly routing web inquiries to your WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Featured Work (Portfolio) Section -->
+    <section id="work" class="py-16 relative z-10 bg-darker/40 border-t border-white/5 border-b">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3">Featured Work.</h2>
+                    <p class="text-slate-400 text-base max-w-xl">Real systems we've engineered to capture leads and automate operations.</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1: Chris-G Belts -->
+                <a href="https://chrisgbelts.com" target="_blank" class="glass-card rounded-[2rem] p-4 hover:-translate-y-2 hover:border-accent/40 transition duration-500 group block">
+                    <div class="relative overflow-hidden rounded-[1.5rem] mb-6 aspect-[16/10] bg-darker">
+                        <!-- Points to the exact filename you uploaded -->
+                        <img src="Screenshot%202026-09-26%20003015.jpg" alt="Chris-G Swiss Belts" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-darker via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-5 left-5">
+                            <span class="bg-accent/20 text-accentGlow text-[10px] font-bold px-3 py-1.5 rounded-full border border-accent/20 backdrop-blur-md uppercase tracking-wider">E-commerce Sales Page</span>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-2">
+                        <h3 class="text-2xl font-bold text-white mb-2 flex items-center justify-between">
+                            Chris-G Swiss Belts
+                            <svg class="w-5 h-5 text-slate-500 group-hover:text-accent transition transform group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">A high-converting sales engine designed for physical products with an integrated cart and direct WhatsApp routing for delivery.</p>
+                    </div>
+                </a>
+
+                <!-- Project 2: Agromart Direct -->
+                <a href="https://agromartdirect.com" target="_blank" class="glass-card rounded-[2rem] p-4 hover:-translate-y-2 hover:border-purple-500/40 transition duration-500 group block">
+                    <div class="relative overflow-hidden rounded-[1.5rem] mb-6 aspect-[16/10] bg-darker">
+                        <!-- Points to the exact filename you uploaded -->
+                        <img src="Screenshot%202026-09-26%20002812.png" alt="Agromart & Co." class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-darker via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-5 left-5">
+                            <span class="bg-purple-500/20 text-purple-300 text-[10px] font-bold px-3 py-1.5 rounded-full border border-purple-500/20 backdrop-blur-md uppercase tracking-wider">Custom Web App</span>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-2">
+                        <h3 class="text-2xl font-bold text-white mb-2 flex items-center justify-between">
+                            Agromart Direct
+                            <svg class="w-5 h-5 text-slate-500 group-hover:text-purple-400 transition transform group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">A dual-portal marketplace web application routing both everyday living services and commercial agribusiness trade.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 relative z-10">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">How We Build.</h2>
+                <p class="text-slate-400 text-base max-w-xl mx-auto">A transparent, no-nonsense process designed to get you results fast.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-6 relative">
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-white/10 -z-10 -translate-y-1/2"></div>
+                <div class="flex-1 glass-card p-6 rounded-2xl relative"><div class="w-10 h-10 rounded-full bg-accent text-white font-bold flex items-center justify-center text-lg absolute -top-5 left-6">1</div><h3 class="text-xl font-bold text-white mt-3 mb-3">The Blueprint</h3><p class="text-slate-400 text-sm">We analyze your operations and map out the exact digital architecture needed to fix revenue leaks.</p></div>
+                <div class="flex-1 glass-card p-6 rounded-2xl relative"><div class="w-10 h-10 rounded-full bg-purple-500 text-white font-bold flex items-center justify-center text-lg absolute -top-5 left-6">2</div><h3 class="text-xl font-bold text-white mt-3 mb-3">The Build</h3><p class="text-slate-400 text-sm">Our engineers write clean, fast code to construct your custom web app or sales page.</p></div>
+                <div class="flex-1 glass-card p-6 rounded-2xl relative"><div class="w-10 h-10 rounded-full bg-green-500 text-white font-bold flex items-center justify-center text-lg absolute -top-5 left-6">3</div><h3 class="text-xl font-bold text-white mt-3 mb-3">The Launch</h3><p class="text-slate-400 text-sm">We deploy the system and hand over the keys to your upgraded business engine.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 relative z-10">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="glass-card rounded-[2rem] p-8 md:p-12 relative overflow-hidden border-white/10 flex flex-col md:flex-row items-center gap-8">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-purple-600/5"></div>
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-tr from-accent to-purple-500 p-1 shrink-0"><div class="w-full h-full rounded-full bg-darker flex items-center justify-center overflow-hidden"><svg class="w-16 h-16 text-slate-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg></div></div>
+                <div class="relative z-10 text-center md:text-left">
+                    <div class="text-accent font-bold tracking-wider uppercase text-xs mb-2">The Founder</div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Enoch Daniels</h2>
+                    <p class="text-slate-400 text-base leading-relaxed mb-4">"My mission is to build digital engines that capture leads and automate the heavy lifting so you can get back to running your business."</p>
                 </div>
             </div>
         </div>
@@ -227,7 +312,6 @@
         }
 
         // --- THE SECRET INSTALL LOGIC ---
-        // Register the Service Worker required for PWA installation
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js');
         }
@@ -236,12 +320,9 @@
         const installBtn = document.getElementById('secret-install-btn');
 
         window.addEventListener('beforeinstallprompt', (e) => {
-            // Prevent Chrome from showing the mini-infobar
             e.preventDefault();
-            // Stash the event so it can be triggered later.
             deferredPrompt = e;
             
-            // SECURITY CHECK: Only show button if URL contains "?install=me"
             if (window.location.search.includes('install=me')) {
                 installBtn.classList.remove('hidden');
             }
@@ -249,12 +330,10 @@
 
         installBtn.addEventListener('click', async () => {
             if (deferredPrompt) {
-                // Show the install prompt
                 deferredPrompt.prompt();
-                // Wait for the user to respond to the prompt
                 const { outcome } = await deferredPrompt.userChoice;
                 if (outcome === 'accepted') {
-                    installBtn.classList.add('hidden'); // Hide button if installed
+                    installBtn.classList.add('hidden');
                 }
                 deferredPrompt = null;
             }

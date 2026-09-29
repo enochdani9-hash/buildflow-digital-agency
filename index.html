@@ -247,15 +247,11 @@
                     </div>
                 </div>
 
-                <!-- NEW: BULLETPROOF HIDDEN IFRAME FORM -->
+                <!-- TEST FORM: No iframe, no javascript blocking it -->
                 <div class="glass-card rounded-2xl p-6 md:p-8 border-accent/20 relative">
                     <h3 class="text-xl font-bold text-white mb-5" id="form-header">Request a Tech Audit</h3>
                     
-                    <!-- Invisible frame to swallow the redirect -->
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-                    
-                    <!-- Form targets the hidden iframe instead of using JavaScript -->
-                    <form id="audit-form" action="https://formsubmit.co/enochdani9@gmail.com" method="POST" target="hidden_iframe" class="space-y-4" onsubmit="submitUI()">
+                    <form id="audit-form" action="https://formsubmit.co/enochdani9@gmail.com" method="POST" class="space-y-4">
                         
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_subject" value="New Tech Audit Request!">
@@ -266,13 +262,6 @@
                         <div><textarea name="project_details" rows="3" required class="w-full px-4 py-2.5 rounded-lg glass-input text-white text-sm" placeholder="What do you need built?"></textarea></div>
                         <button type="submit" id="submit-btn" class="w-full bg-accent hover:bg-blue-600 text-white font-bold py-3 rounded-lg text-sm transition duration-300">Submit Request</button>
                     </form>
-
-                    <!-- Success Message -->
-                    <div id="success-message" class="hidden text-center py-8">
-                        <div class="w-12 h-12 bg-green-500/20 text-green-400 rounded-full flex items-center justify-center mx-auto mb-3 border border-green-500/50"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                        <h4 class="text-lg font-bold text-white mb-1">Request Sent!</h4>
-                        <p class="text-slate-400 text-sm">We will contact you shortly.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -284,23 +273,6 @@
 
     <!-- Service Worker & PWA Logic -->
     <script>
-        // Simple UI swap function (no API calls to break!)
-        function submitUI() {
-            const btn = document.getElementById('submit-btn');
-            
-            // 1. Change button to loading state immediately
-            btn.innerHTML = 'Sending...';
-            btn.disabled = true;
-            btn.classList.add('opacity-50');
-
-            // 2. Wait 1.5 seconds for the invisible iframe to finish the post, then show success UI
-            setTimeout(() => {
-                document.getElementById('audit-form').style.display = 'none';
-                document.getElementById('form-header').style.display = 'none';
-                document.getElementById('success-message').classList.remove('hidden');
-            }, 1500);
-        }
-
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js');
         }

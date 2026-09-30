@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuildFlow Digital | Custom Web Apps & Sales Pages</title>
     
-    <!-- Link to the Web App Manifest -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#0B0F19">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -70,17 +67,14 @@
 </head>
 <body class="bg-dark text-slate-300 font-sans antialiased relative overflow-x-hidden selection:bg-accent selection:text-white">
 
-    <!-- Secret Install Button (Hidden by default) -->
     <button id="secret-install-btn" class="hidden fixed bottom-6 right-6 z-[100] bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-3 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)] font-bold border border-white/20 hover:scale-105 transition-transform flex items-center gap-2">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
         Install App
     </button>
 
-    <!-- Refined Ambient Background Orbs -->
     <div class="absolute top-[-10%] left-[-10%] w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-[100px] pointer-events-none orb-animate"></div>
     <div class="absolute top-[40%] right-[-10%] w-[300px] h-[300px] bg-purple-600/20 rounded-full blur-[100px] pointer-events-none orb-animate" style="animation-delay: 2s;"></div>
 
-    <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-card border-b-0 border-t-0 border-l-0 border-r-0 border-white/5 transition-all duration-300">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center max-w-6xl">
             <div class="text-xl font-extrabold tracking-tight text-white">BuildFlow<span class="text-accent">.</span></div>
@@ -93,7 +87,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="relative pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-grid">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-dark pointer-events-none"></div>
         <div class="container mx-auto px-6 text-center relative z-10 max-w-4xl">
@@ -118,7 +111,6 @@
         </div>
     </header>
 
-    <!-- Services Section -->
     <section id="services" class="py-16 relative z-10">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="text-center mb-16">
@@ -128,21 +120,21 @@
             
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="glass-card rounded-2xl p-6 hover:-translate-y-1 hover:border-accent/40 transition duration-300 group">
-                    <div class="inline-block bg-accent/10 text-accent font-bold px-3 py-1 rounded-full text-[10px] uppercase tracking-wider mb-5 border border-accent/20">Starts at 800 GHS</div>
+                    <div class="inline-block bg-blue-500/20 text-blue-300 font-extrabold px-3 py-1.5 rounded-full text-xs uppercase tracking-wider mb-5 border border-blue-500/30">Starts at 800 GHS</div>
                     <div class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center mb-5"><svg class="w-5 h-5 text-accentGlow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
                     <h3 class="text-xl font-bold text-white mb-3">The Sales Engine</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Focused, lightning-fast landing pages using proven conversion copywriting to capture leads immediately.</p>
                 </div>
 
                 <div class="glass-card rounded-2xl p-6 hover:-translate-y-1 hover:border-purple-500/40 transition duration-300 group">
-                    <div class="inline-block bg-purple-500/10 text-purple-400 font-bold px-3 py-1 rounded-full text-[10px] uppercase tracking-wider mb-5 border border-purple-500/20">Starts at 2,000 GHS</div>
+                    <div class="inline-block bg-purple-500/20 text-purple-300 font-extrabold px-3 py-1.5 rounded-full text-xs uppercase tracking-wider mb-5 border border-purple-500/30">Starts at 2,000 GHS</div>
                     <div class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center mb-5"><svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></div>
                     <h3 class="text-xl font-bold text-white mb-3">Custom Web Apps</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">From booking systems to tailored client portals, we develop secure, interactive web tools that eliminate human error.</p>
                 </div>
 
                 <div class="glass-card rounded-2xl p-6 hover:-translate-y-1 hover:border-green-500/40 transition duration-300 group">
-                    <div class="inline-block bg-green-500/10 text-green-400 font-bold px-3 py-1 rounded-full text-[10px] uppercase tracking-wider mb-5 border border-green-500/20">Starts at 300 GHS</div>
+                    <div class="inline-block bg-green-500/20 text-green-300 font-extrabold px-3 py-1.5 rounded-full text-xs uppercase tracking-wider mb-5 border border-green-500/30">Starts at 300 GHS</div>
                     <div class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center mb-5"><svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></div>
                     <h3 class="text-xl font-bold text-white mb-3">Automation Pipeline</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">We integrate your platforms directly into your daily workflow, instantly routing web inquiries to your WhatsApp.</p>
@@ -151,7 +143,6 @@
         </div>
     </section>
 
-    <!-- Featured Work (Portfolio) Section -->
     <section id="work" class="py-16 relative z-10 bg-darker/40 border-t border-white/5 border-b">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12">
@@ -162,7 +153,6 @@
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project 1: Chris-G Belts -->
                 <a href="https://chrisgbelts.com" target="_blank" class="glass-card rounded-[2rem] p-4 hover:-translate-y-2 hover:border-accent/40 transition duration-500 group block">
                     <div class="relative overflow-hidden rounded-[1.5rem] mb-6 aspect-[16/10] bg-darker">
                         <img src="belts.jpg" alt="Chris-G Swiss Belts" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700">
@@ -180,7 +170,6 @@
                     </div>
                 </a>
 
-                <!-- Project 2: Agromart Direct -->
                 <a href="https://agromartdirect.com" target="_blank" class="glass-card rounded-[2rem] p-4 hover:-translate-y-2 hover:border-purple-500/40 transition duration-500 group block">
                     <div class="relative overflow-hidden rounded-[1.5rem] mb-6 aspect-[16/10] bg-darker">
                         <img src="agromart.png" alt="Agromart & Co." class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700">
@@ -201,7 +190,6 @@
         </div>
     </section>
 
-    <!-- Process Section -->
     <section id="process" class="py-16 relative z-10">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="text-center mb-16">
@@ -218,7 +206,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-16 relative z-10">
         <div class="container mx-auto px-6 max-w-4xl">
             <div class="glass-card rounded-[2rem] p-8 md:p-12 relative overflow-hidden border-white/10 flex flex-col md:flex-row items-center gap-8">
@@ -233,7 +220,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- NEW WHATSAPP-INTEGRATED CONTACT SECTION -->
     <section id="contact" class="py-16 relative z-10 bg-darker/30 border-t border-white/5">
         <div class="container mx-auto px-6 max-w-5xl">
             <div class="grid md:grid-cols-2 gap-10 items-start">
@@ -247,19 +234,15 @@
                     </div>
                 </div>
 
-                <!-- TEST FORM: No iframe, no javascript blocking it -->
+                <!-- DIRECT WHATSAPP FORM -->
                 <div class="glass-card rounded-2xl p-6 md:p-8 border-accent/20 relative">
                     <h3 class="text-xl font-bold text-white mb-5" id="form-header">Request a Tech Audit</h3>
                     
-                    <form id="audit-form" action="https://formsubmit.co/enochdani9@gmail.com" method="POST" class="space-y-4">
-                        
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_subject" value="New Tech Audit Request!">
-
-                        <div><input type="text" name="name" required class="w-full px-4 py-2.5 rounded-lg glass-input text-white text-sm" placeholder="Your Name"></div>
-                        <div><input type="text" name="business" required class="w-full px-4 py-2.5 rounded-lg glass-input text-white text-sm" placeholder="Business Name"></div>
-                        <div><input type="email" name="email" required class="w-full px-4 py-2.5 rounded-lg glass-input text-white text-sm" placeholder="Email Address"></div>
-                        <div><textarea name="project_details" rows="3" required class="w-full px-4 py-2.5 rounded-lg glass-input text-white text-sm" placeholder="What do you need built?"></textarea></div>
+                    <form id="audit-form" class="space-y-4" onsubmit="sendToWhatsApp(event)">
+                        <div><input type="text" id="wa-name" required class="w-full px-4 py-2.5 rounded-lg glass-input text-white text-sm" placeholder="Your Name"></div>
+                        <div><input type="text" id="wa-business" required class="w-full px-4 py-2.5 rounded-lg glass-input text-white text-sm" placeholder="Business Name"></div>
+                        <div><input type="email" id="wa-email" required class="w-full px-4 py-2.5 rounded-lg glass-input text-white text-sm" placeholder="Email Address"></div>
+                        <div><textarea id="wa-details" rows="3" required class="w-full px-4 py-2.5 rounded-lg glass-input text-white text-sm" placeholder="What do you need built?"></textarea></div>
                         <button type="submit" id="submit-btn" class="w-full bg-accent hover:bg-blue-600 text-white font-bold py-3 rounded-lg text-sm transition duration-300">Submit Request</button>
                     </form>
                 </div>
@@ -271,8 +254,30 @@
         <p>&copy; 2026 BuildFlow Digital. All rights reserved.</p>
     </footer>
 
-    <!-- Service Worker & PWA Logic -->
+    <!-- Service Worker, PWA & WhatsApp Logic -->
     <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault(); // Stop page reload
+            
+            // Get the form values
+            const name = document.getElementById('wa-name').value;
+            const business = document.getElementById('wa-business').value;
+            const email = document.getElementById('wa-email').value;
+            const details = document.getElementById('wa-details').value;
+            
+            // Format the message
+            const message = `*New Tech Audit Request!*\n\n*Name:* ${name}\n*Business:* ${business}\n*Email:* ${email}\n*Project Details:* ${details}`;
+            
+            // Encode the text for URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Generate the WhatsApp Link
+            const whatsappUrl = `https://wa.me/233245641480?text=${encodedMessage}`;
+            
+            // Open WhatsApp
+            window.open(whatsappUrl, '_blank');
+        }
+
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js');
         }
